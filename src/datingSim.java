@@ -7,7 +7,6 @@
 // Import statements
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -36,10 +35,10 @@ public class IdolAcademy {
 	private JButton buttons [];
 	private JLabel bottomLabel;
 	private JLabel leftLabel;
+	private int currentOpt []; // for current option [who][points]
 	
 	public static void main (String args[]) {
 		new IdolAcademy().go();
-		
 	}
 	
 	public void go () {
@@ -105,10 +104,9 @@ public class IdolAcademy {
 			buttons[i].setBackground(Color.black);
 			buttons[i].setForeground(Color.white);
 			buttons[i].setText(opt[i]);
+			buttons[i].setEnabled(true);
+			buttons[i].addActionListener(new listen()); 	// Adds action Listeners
 		}
-		
-		// Adds action Listeners
-		buttons[0].addActionListener(new listen());
 		
 		// Adds elements to super element
 		for (int i = 0; i < 3; i ++) {
@@ -135,7 +133,11 @@ public class IdolAcademy {
 	class listen implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
-			
+			// Adds points
+			boys.get(currentOpt[0]).points += currentOpt[1];
+			for (int i = 0; i < 3; i ++) {
+				buttons[i].setEnabled(false);
+			}
 			
 		}
 		
