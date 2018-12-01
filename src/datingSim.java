@@ -9,8 +9,13 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.ArrayList;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
@@ -20,26 +25,31 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
-public class datingSim {
+public class IdolAcademy {
 	
 	// Class variables
-	static ArrayList <Boy> boys;
-	static JFrame window;
-	static JPanel mainPanel;
-	static JPanel left;
-	static JPanel bottom;
-	static JButton buttons [];
-	static JLabel bottomLabel;
-	static JLabel leftLabel;
+	private ArrayList <Boy> boys;
+	private JFrame window;
+	private JPanel mainPanel;
+	private JPanel left;
+	private JPanel bottom;
+	private JButton buttons [];
+	private JLabel bottomLabel;
+	private JLabel leftLabel;
 	
 	public static void main (String args[]) {
+		new IdolAcademy().go();
+		
+	}
+	
+	public void go () {
 //		createInitial();
 		createBoys("as agf end");
 		
 	}
-
+	
 	// Makes initial screen
-	public static void createInitial () {
+	public void createInitial () {
 		
 		// Makes elements
 		window = new JFrame ("Idol Academy");
@@ -74,7 +84,7 @@ public class datingSim {
 	}
 	
 	// Creates boys
-	public static void createBoys (String names) {
+	public void createBoys (String names) {
 		
 		boys = new ArrayList <Boy> ();
 		
@@ -87,16 +97,18 @@ public class datingSim {
 	}
 	
 	// Makes options - repaints in other method
-	public static void options (String [] opt) {
+	public void options (String [] opt) {
 		// Makes and initializes
 		buttons = new JButton[3];
 		for (int i = 0; i < 3; i ++) {
 			buttons[i] = new JButton(opt[i]);
 			buttons[i].setBackground(Color.black);
 			buttons[i].setForeground(Color.white);
+			buttons[i].setText(opt[i]);
 		}
 		
-		// Adds action listeners
+		// Adds action Listeners
+		buttons[0].addActionListener(new listen());
 		
 		// Adds elements to super element
 		for (int i = 0; i < 3; i ++) {
@@ -105,7 +117,7 @@ public class datingSim {
 	}
 	
 	// Resets screen - when button is pressed
-	public static void resetScreen (String boyPic, boolean option, String[] text) {
+	public void resetScreen (String boyPic, boolean option, String[] text) {
 		
 		// Changes screen
 		leftLabel.setIcon(new ImageIcon(boyPic));
@@ -117,6 +129,16 @@ public class datingSim {
 		
 		// Repaints
 		window.repaint();
+	}
+	
+	
+	class listen implements ActionListener {
+
+		public void actionPerformed(ActionEvent e) {
+			
+			
+		}
+		
 	}
 
 }
