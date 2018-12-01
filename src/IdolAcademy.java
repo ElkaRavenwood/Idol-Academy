@@ -1,5 +1,5 @@
 /*
- * By: Jamie Won, Natasha Kuk, Jessie Xiong
+ * By: Jamie Won, Natasha Kuk, Jessie Xiong, Parker Rowe
  * Date: December 1, 2018
  */
 
@@ -8,9 +8,9 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Toolkit;
-import java.io.BufferedReader;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -29,49 +29,43 @@ import javax.swing.WindowConstants;
 public class IdolAcademy {
 	
 	// Class variables
-	static ArrayList <Boy> boys;
-	static JFrame window;
-	static JPanel mainPanel;
-	static JPanel left;
-	static JPanel bottom;
-	static JButton buttons [];
-	static JLabel bottomLabel;
-	static JLabel leftLabel;
+	private ArrayList <Boy> boys;
+	private JFrame window;
+	private JPanel mainPanel;
+	private JPanel left;
+	private JPanel bottom;
+	private JButton buttons [];
+	private JLabel bottomLabel;
+	private JLabel leftLabel;
 	private int currentOpt []; // for current option [who][points]
-
+	private String playerName;
+	
 	public static void main (String args[]) {
 		new IdolAcademy().go();
-
-        try {
-            readFile("IdolAcademy.txt");
-        } catch (Exception e) {
-            System.out.println("Could not read script file");
-        }
-
-
-    }
-
-
+	}
+	
 	public void go () {
 //		createInitial();
+		TitleScreen temp = new TitleScreen();
+		playerName = temp.name;
+		try {
+			readFile("script.txt");
+		} catch (Exception e){
+			e.printStackTrace();
+		}
 		createBoys("as agf end");
 		
 	}
-
-
-
-
-
-
-    //read the script text file
-    public static void readFile(String path)throws Exception{
+	
+	//read the script text file
+    public void readFile(String path)throws Exception{
         File file = new File(path);
         BufferedReader br = new BufferedReader(new FileReader(file));
         String line;
         char identifier;
         String dialogue;
 
-        //createBoys(br.readLine());
+        createBoys(br.readLine());
 
         while ((line = br.readLine()) != null){
             identifier = line.charAt(0);
@@ -97,13 +91,17 @@ public class IdolAcademy {
                     System.out.println("---No identifier---");
             }
         }
+        br.close();
     }
 
-    //prints dialogue letter by letter
+    // prints dialogue letter by letter
     public static void printDialogue(String dialogue){
         System.out.println(dialogue+"\n");
     }
 
+
+	
+	
 	// Makes initial screen
 	public void createInitial () {
 		
@@ -140,16 +138,16 @@ public class IdolAcademy {
 	}
 	
 	// Creates boys
-    public void createBoys (String names) {
-
+	public void createBoys (String names) {
+		
 		boys = new ArrayList <Boy> ();
-
+		
 		while (names.contains(" ")) {
 			String name = names.substring(0, names.indexOf(" ")); // Gets a name
 			names = names.substring((names.indexOf(" ")+1)); // Resets names string
 			boys.add(new Boy (name));
 		}
-
+		
 	}
 	
 	// Makes options - repaints in other method
@@ -164,8 +162,6 @@ public class IdolAcademy {
 			buttons[i].setEnabled(true);
 			buttons[i].addActionListener(new listen()); 	// Adds action Listeners
 		}
-		
-		// Adds action listeners
 		
 		// Adds elements to super element
 		for (int i = 0; i < 3; i ++) {
@@ -183,12 +179,12 @@ public class IdolAcademy {
 		} else {
 			bottomLabel.setText(text[0]);
 		}
-
+		
 		// Repaints
 		window.repaint();
 	}
-
-
+	
+	
 	class listen implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
@@ -197,9 +193,9 @@ public class IdolAcademy {
 			for (int i = 0; i < 3; i ++) {
 				buttons[i].setEnabled(false);
 			}
-
+			
 		}
-
+		
 	}
-
+	
 }
