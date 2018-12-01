@@ -1,0 +1,276 @@
+Jungwoo Danny Seokmin end
+^You walk into English class on your first day at JYP Idol School. You are very nervous as you are scared of whether the people will like you or not.
+^Teacher: Okay class, settle down! We have a new student, why don’t you introduce yourself? ^What’s your name?
+^You sit down at the only empty seat in class.
+^Jungwoo: Hello! I’m Jungwoo, I’m the class rep.  What kind of idol do you want to be?
+?1. Singer	2. Rapper	3. Dancer
+^Jungwoo: What type of image are you going for as an idol?
+?1. Gnarly	2. Cool		3. Cute
+^Danny: Boo! Haha! Sorry, did I scare you? Nice to meet you, I’m Danny Park. I’m the main Dancer in our group!
+: Group?
+^Danny: Yeah, Jungwoo and I are going to debut soon! We’re in a three member band called Wave Dream.
+: Who’s your third member?
+^Danny: Seokmin! Come over and introduce yourself!
+^Seokmin: Hello. I’m Seokmin Song.  
+^Danny: He’s a man of few words. Let’s look at your schedule, see what else you have!  Oh guys, look! She has dance english and vocals with us! At the end of every week, we have a test, so make sure you pay attention! Only, this week, we get Friday off.
+^Teacher: Okay, everybody listen up! 
+@Dance Class!
+^Dance Instructor: Okay class, today’s choreo goes
+Left Right Right Left
+^Dance Instructor: Now your turn! 
+@Vocals Class!
+^Vocal Instructor: Hello everybody! Today we are going to learn the notes in the scale. There are seven basic notes that everyone must know.  They are A B C D E F and G.  Please remember this!
+
+
+
+&Day 2: Tuesday
+*Wow! It’s 8:30, it’s so early I should probably do something.  Should I
+1. Go to the library	2. Go to the courtyard		3. Go practice dance in the dance studio
+
+@Library!
+^ Wow! It’s so peaceful in here.  I should probably look at some books.
+^ Jungwoo: Hi! I didn’t expect to see you here, I’m just studying, what about you?
+^ : I’m just browsing, thanks!
+^ Jungwoo: Yeah no problem, we should walk to class later, let me know when you’re done.
+@Courtyard!
+^ Seokmin: Hello. Fancy seeing you here so early.
+^ : Why are you here this early?
+^ Danny: I’m just composing a song for the group, I’ve been pretty torn up about a relationship that just ended.
+^ : Oh no, that’s too bad.
+^ Danny: Why are you here?
+^ : I’m just bored and it’s really early.
+^ Danny: Oh, well help me pick some lyrics, what word do you think works better, I need something that rhymes with coward.
+^ 1. Absurd	2. Conquered		3. Anchored
+^ Seokmin: Yeah, I like that one too, I’m still working on it.  Okay, let’s keep going, I really want her to cry when she hears this song.
+@Dance Studio! 
+^ Danny: Hi! I’m so excited you’re here, I haven’t seen you in forever!
+^ : You just met me yesterday.
+^ Danny: Well it felt like forever to me. Do you love to dance?
+* 1. Heck yeah!		2. Um no.	3. I guess?
+^ Danny: Okay, well I’ll show you a few stuff before class starts and then we can head over to English together.
+^ : Sure, sounds good!
+@English!
+^ Teacher: Good morning class, today’s fun fact of the day is that the word swims will be swims even when turned upside down.  These words are called ambigrams.  Remember this fact! Anyways onto to the lesson…
+@Dance! 
+^ Dance Instructor: Good morning, everyone today we will be starting a new dance sequence, the one from yesterday was just a practice to warm you all up, please remember this one because you will perform the whole dance sequence for me on Thursday. Today’s goes Left Right Right Left. Please remember this!
+@Vocals!
+^ Vocal Instructor: Hello everyone.  Today’s fun fact is: the rise of Kpop is the start of a wave of an international interest in Korean culture called Hallyu.  Literally translated, it means Korean wave and encompasses an interest in Korean music, dramas and culture. Remember this because it will come up on our quiz later in the week
+*It’s lunch time, where should I eat?
+1. Roof		2. Classroom		3. Courtyard
+@Roof!
+^ Seokmin: Oh, hello. Nice to see you again.  I’m sorry what was your name again?
+^ : How rude of you, I can’t believe you forgot. I’m just kidding my name is
+^ Seokmin: I’m so sorry, I have a terrible memory.  I’m trying to finish a song and it’s very challenging to stay focused. 
+^ : It’s so cool that you can write songs!
+^ Seokmin: Thank you, I’ve been writing my own songs since I was 10, I just love music. I’m the main rapper but I love all types of music, not just hip hop.
+@Classroom!
+^ Jungwoo: Hello again! It’s so nice to have all our classes together. 
+^ : Where are your band mates? 
+^ Jungwoo: Oh we split up at lunch we each have time for ourselves to just relax from all the hard work. 
+^ : That’s understandable.
+@Courtyard!
+^ Danny: Hi!  It’s good to see you again.  I’ve missed you! 
+^ : You saw me 5 minutes ago in class.
+^ Danny: I know but 5 minutes is a long time.
+^ : Whatever you say.
+^ Danny: Isn’t it so nice out here? I love the ambience.
+^ : You seem like a real nerd.
+^ Danny: Hey! Don’t call me that, you’re so mean!
+^ : I’m kidding, haha.
+
+*I have free time now, should I go over
+1. English	2. Dance	3. Vocals
+
++2 points!
+
+Day 3 Wednesday
+*Wow! It’s 8:30, it’s so early I should probably do something.  Should I
+1. Go to the campus coffee shop	2. Go to the dance studio lounge		3. Go to the park 
+@Coffee shop!
+^ Jungwoo: Hi again! Wow, I see you everywhere.
+^ : Is that a problem?
+^ Jungwoo: No not at all, I like seeing you around.  I’m just doing some studying I’m learning French.
+^ : Is this to connect with your French fans better?
+^ Jungwoo: Haha no, I’ve always wanted to learn french. 
+^ : Teach me something.
+^ Jungwoo: Je veux manger un ananas
+^ : What does that mean?
+^ Jungwoo: I wanna eat a pineapple.
+^ : Classy.
+^ Jungwoo: That’s how I roll. 
+@Dancer Studio Lounge
+^ Danny: Wow! I didn’t expect to see you here.
+^ : What are you up to?  
+^ Danny: Just playing some Super Smash Bros.  Do you want to play?
+^ Yeah, sure! How do I play?
+^ Danny: Honestly, I don’t even know I just button mash.
+@Park!
+^ Seokmin: Hello again!
+^ : How have you been?
+^ Seokmin: I’m alright, I’m just about to do some recording.
+^ : What are you recording? 
+^ Seokmin: I’m making a dance cover.
+^ : Do you need any help?
+^ Seokmin: Sure, I guess you could help record? I was just going to put it on a bench and see how well it goes, but I think you can probably do a much better job than the bench.
+^ : I’ll try my best.
+@English!
+^ Teacher: Good morning class, today’s fun fact of the day is the term girl used to mean ‘child or ‘young person’.  Remember this fact! Anyways onto the lesson…
+@Dance! 
+^ Dance Instructor: Good morning, everyone. Today’s dance sequence goes Left Right Left Right.  Hopefully you haven’t forgotten yesterday’s, you’ll need to know both parts for Thursday.
+@Vocals!
+^ Vocal Instructor: Hello everyone.  Today’s fun fact is: over 100 groups debut in South Korea every year, but less than 5% are successful. Remember this for Thursday!
+*It’s lunch time, where should I eat?
+1. Roof		2. Classroom		3. Courtyard
+@Roof!
+^ Seokmin: Oh, hello. Nice to see you again.  How has your day been?
+^ : It’s been alright, I learned a lot today!
+^ Seokmin: Yeah, we learn a lot at the academy!
+^ : How long have you been here?
+^ Seokmin: I’ve been a trainee since I was 10.
+^ : No way! That’s such a long time!
+^ Seokmin: Yeah, I’m one of the lucky ones.  There are people who train for ten years, and then drop out because they never make it. 
+^ : No way!
+^ Seokmin: It’s a cutthroat industry, but we love music, and we love to dance and this is our dream. We’re very thankful and lucky to get this opportunity.
+
+
+*I have free time now, should I go over
+1. English	2. Dance	3. Vocals
+
++2 points!
+
+&Day 4: Thursday
+*Wow! It’s 8:30, it’s so early I should probably do something.  Should I
+1. Go to the library	2. Go to the courtyard		3. Go practice dance in the dance studio
+@Library!
+^ : I never get over how beautiful everything in this campus is.
+^ Jungwoo: Good morning! Are you ready for all the tests today? 
+^ : As ready as I’ll ever be!
+^ Jungwoo: Why don’t we review a bit of English in here before going to class?
+^ : Sounds good!
+@Courtyard!
+^ Seokmin: Hello. Fancy seeing you here so early.
+^ : How are prepping for the tests going? 
+^ Seokmin: They’re going all right, I was going to go over some vocals right now.  
+*Do you remember any of the fun facts from class?
+1. Yes		2. I think	3. Not at all
+^ Seokmin: Whoops, I’m really forgetful so I forgot all of them.  Let’s review them together.
+@Dance Studio! 
+^ Danny: I missed you! I’m so glad you’re here I forgot the dance moves from the past two days and I needed to go over them.  Why don’t we try and see if we can remember to together? Afterwards we can go to English class together?
+^ : Sounds good!
+@English!
+^ Teacher: Good morning class, today is our quiz!  
+*What is the term for a word that is the same word upside down?
+1. Anigram	2. Ambigram	3. Amigram
+@Dance! 
+^ Dance Instructor: Good morning, okay everyone line up and we will go over the sequence. 
+*What was the dance sequence from Day 2
+@Vocals!
+^ Vocal Instructor: Hello everyone.  Today’s fun fact is: the rise of Kpop is the start of a wave of an international interest in Korean culture called Hallyu.  Literally translated, it means Korean wave and encompasses an interest in Korean music, dramas and culture. Remember this because it will come up on our quiz later in the week
+
+*It’s lunch time, where should I eat?
+1. Roof		2. Classroom		3. Courtyard
+
+@Roof!
+^ Seokmin: Oh, hello. Nice to see you again.  I’m sorry what was your name again?
+^ : How rude of you, I can’t believe you forgot. I’m just kidding my name is
+^ Seokmin: I’m so sorry, I have a terrible memory.  I’m trying to finish a song and it’s very challenging to stay focused. 
+^ : It’s so cool that you can write songs!
+^ Seokmin: Thank you, I’ve been writing my own songs since I was 10, I just love music. I’m the main rapper but I love all types of music, not just hip hop.
+
+@Classroom!
+^ Jungwoo: Hello again! It’s so nice to have all our classes together. 
+^ : Where are your band mates? 
+^ Jungwoo: Oh we split up at lunch we each have time for ourselves to just relax from all the hard work. 
+^ : That’s understandable.
+
+@Courtyard!
+^ Danny: Hi!  It’s good to see you again.  I’ve missed you! 
+^ : You saw me 5 minutes ago in class.
+^ Danny: I know but 5 minutes is a long time.
+^ : Whatever you say.
+^ Danny: Isn’t it so nice out here? I love the ambience.
+^ : You seem like a real nerd.
+^ Danny: Hey! Don’t call me that, you’re so mean!
+^ : I’m kidding, haha.
+
+*I have free time now, should I go over
+1. English	2. Dance	3. Vocals
+
++2 points!
+
+
+
+
+English Class, Dance Studio, Vocals Studio
+Courtyard, School Roof
+
+
+
+
+
+
+Guy
+AM
+AM Class
+Lunch
+PM Practice
+PM
+Kim Jungwoo
+Reading in the library
+
+
+Classroom
+
+
+Vocal Studio
+Song Seokmin
+Composing in the courtyard
+
+
+Roof
+
+
+Guitar Practice
+Danny Park
+Practicing in the Dance studio
+
+
+Courtyard
+
+
+Video Games in the library
+
+AM Class: 1st english, then dance, then vocal -> eng give vocab word, dance key sequence, vocal song lyric
+PM practice: english, dance, vocals -> no interaction, just +skills
+
+
+Guy
+Event 1 - 10 pts
+Event 2 - 25 pts
+Kim Jungwoo
+Coffee shop Study together
+Find him playing piano
+Song Seokmin
+Park Find him recording
+Shows you his project
+Danny Park
+Lounge Play video games
+Dance together
+
+User:
+Name
+
+Skills:
+Dance, english, vocal
+
+Passed end of week quiz: -> need 3/3 points
+
+
+For each guy:
+Name
+
+Relationship points
+
+Canned conversations
+
+
