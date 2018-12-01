@@ -23,18 +23,18 @@ import javax.swing.WindowConstants;
 public class datingSim {
 	
 	// Class variables
-	static Boy [] boys;
+	static ArrayList <Boy> boys;
 	static JFrame window;
 	static JPanel mainPanel;
 	static JPanel left;
 	static JPanel bottom;
 	static JButton buttons [];
 	static JLabel bottomLabel;
+	static JLabel leftLabel;
 	
 	public static void main (String args[]) {
-		
-//		createBoys(3, sda);
-		createInitial();
+//		createInitial();
+		createBoys("as agf end");
 		
 	}
 
@@ -73,19 +73,17 @@ public class datingSim {
 		
 	}
 	
-	// Makes boys
-	public static void createBoys (int numBoys, File info) {
-		// Makes the "boys"
-		boys = new Boy[numBoys];
-		/*		// Collects scripts assuming there's only one file
-		for (int i = 0; i < 3; i ++) {
-			// Reads file
-			// First line is name
-			// Adds each line to arraylist (will be in sets of 3)
-			// Makes the boy
-			boys[0] = new Boy();
-		} 
-*/
+	// Creates boys
+	public static void createBoys (String names) {
+		
+		boys = new ArrayList <Boy> ();
+		
+		while (names.contains(" ")) {
+			String name = names.substring(0, names.indexOf(" ")); // Gets a name
+			names = names.substring((names.indexOf(" ")+1)); // Resets names string
+			boys.add(new Boy (name));
+		}
+		
 	}
 	
 	// Makes options - repaints in other method
@@ -108,18 +106,17 @@ public class datingSim {
 	
 	// Resets screen - when button is pressed
 	public static void resetScreen (String boyPic, boolean option, String[] text) {
-		// Makes elements
-		Image im = new ImageIcon(boyPic).getImage();
+		
+		// Changes screen
+		leftLabel.setIcon(new ImageIcon(boyPic));
 		if (option) {
 			options(text);
 		} else {
 			bottomLabel.setText(text[0]);
 		}
 		
-		// Changes screen
-		
 		// Repaints
-
+		window.repaint();
 	}
 
 }
