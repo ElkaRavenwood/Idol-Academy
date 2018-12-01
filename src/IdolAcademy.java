@@ -8,9 +8,11 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Toolkit;
+import java.io.BufferedReader;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 import java.awt.event.ActionEvent;
@@ -27,26 +29,81 @@ import javax.swing.WindowConstants;
 public class IdolAcademy {
 	
 	// Class variables
-	private ArrayList <Boy> boys;
-	private JFrame window;
-	private JPanel mainPanel;
-	private JPanel left;
-	private JPanel bottom;
-	private JButton buttons [];
-	private JLabel bottomLabel;
-	private JLabel leftLabel;
+	static ArrayList <Boy> boys;
+	static JFrame window;
+	static JPanel mainPanel;
+	static JPanel left;
+	static JPanel bottom;
+	static JButton buttons [];
+	static JLabel bottomLabel;
+	static JLabel leftLabel;
 	private int currentOpt []; // for current option [who][points]
-	
+
 	public static void main (String args[]) {
 		new IdolAcademy().go();
-	}
-	
+
+        try {
+            readFile("IdolAcademy.txt");
+        } catch (Exception e) {
+            System.out.println("Could not read script file");
+        }
+
+
+    }
+
+
 	public void go () {
 //		createInitial();
 		createBoys("as agf end");
 		
 	}
-	
+
+
+
+
+
+
+    //read the script text file
+    public static void readFile(String path)throws Exception{
+        File file = new File(path);
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String line;
+        char identifier;
+        String dialogue;
+
+        //createBoys(br.readLine());
+
+        while ((line = br.readLine()) != null){
+            identifier = line.charAt(0);
+            dialogue = line.substring(1);
+            switch(identifier){
+                case '^':
+                    System.out.println(">>>>Dialogue<<<<");
+                    printDialogue(dialogue);
+                    break;
+                case '@':
+                    System.out.println(">>>>Location Change<<<<");
+                    printDialogue(dialogue);
+                    break;
+                case '?':
+                    System.out.println(">>>>Options<<<<");
+                    printDialogue("PRINT OPTIONS BUT THEN DO SOMETHING WITH THE GUI");
+                    break;
+                case ':':
+                    System.out.println(">>>>Player Dialogue<<<<");
+                    printDialogue("playerName:"+dialogue);
+                    break;
+                default:
+                    System.out.println("---No identifier---");
+            }
+        }
+    }
+
+    //prints dialogue letter by letter
+    public static void printDialogue(String dialogue){
+        System.out.println(dialogue+"\n");
+    }
+
 	// Makes initial screen
 	public void createInitial () {
 		
@@ -83,16 +140,16 @@ public class IdolAcademy {
 	}
 	
 	// Creates boys
-	public void createBoys (String names) {
-		
+    public void createBoys (String names) {
+
 		boys = new ArrayList <Boy> ();
-		
+
 		while (names.contains(" ")) {
 			String name = names.substring(0, names.indexOf(" ")); // Gets a name
 			names = names.substring((names.indexOf(" ")+1)); // Resets names string
 			boys.add(new Boy (name));
 		}
-		
+
 	}
 	
 	// Makes options - repaints in other method
@@ -107,6 +164,8 @@ public class IdolAcademy {
 			buttons[i].setEnabled(true);
 			buttons[i].addActionListener(new listen()); 	// Adds action Listeners
 		}
+		
+		// Adds action listeners
 		
 		// Adds elements to super element
 		for (int i = 0; i < 3; i ++) {
@@ -124,12 +183,12 @@ public class IdolAcademy {
 		} else {
 			bottomLabel.setText(text[0]);
 		}
-		
+
 		// Repaints
 		window.repaint();
 	}
-	
-	
+
+
 	class listen implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
@@ -138,9 +197,9 @@ public class IdolAcademy {
 			for (int i = 0; i < 3; i ++) {
 				buttons[i].setEnabled(false);
 			}
-			
+
 		}
-		
+
 	}
 
 }

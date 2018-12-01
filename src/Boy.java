@@ -1,5 +1,6 @@
 // Import statements
 
+
 public class Boy {
 	
 	// Properties
@@ -10,7 +11,8 @@ public class Boy {
 		this.points = 0;
 		this.name = "";
 	}
-	
+
+
 	
 	public Boy (String name) {
 		this.name = name;
